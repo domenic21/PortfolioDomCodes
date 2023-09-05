@@ -19,7 +19,7 @@ const About = () => {
       <motion.p
        
         variants={fadeIn("", ",0.1.1")}
-        className= "  text-secondary text-[17px] relative leading-[30px] "
+        className= "  text-[#FEFAE0] text-[17px] relative leading-[30px] "
       >
         Hola! I'm Domenic, a passionate 23-year-old software engineer
         with a strong focus on front-end development. Lately, I've been utterly
