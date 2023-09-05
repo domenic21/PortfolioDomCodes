@@ -5,17 +5,21 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import SectionWrap from "../hoc/SectionWrap";
+import Tech from "./Tech";  
 
 const About = () => {
   return (
     <>
-      <motion.div>
-        <p className={styles.sectionSubText}>Introduction</p>
+    
+      <motion.div >
+        <p className={styles.sectionSubText }>Introduction</p>
         <h2 className={styles.sectionHeadText}> About Me</h2>
-      </motion.div>
+      </motion.div> 
+     
       <motion.p
+       
         variants={fadeIn("", ",0.1.1")}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className= "  text-secondary text-[17px] relative leading-[30px] "
       >
         Hola! I'm Domenic, a passionate 23-year-old software engineer
         with a strong focus on front-end development. Lately, I've been utterly
@@ -26,7 +30,14 @@ const About = () => {
         Python, Web development and SQL, and I'm constantly eager to expand my knowledge
         and take on new challenges , currently working into the implementation of AI generated chatbots into webapps!.
         Let's make something amazing together!
+       
+        
       </motion.p>
+
+      <Tech />
+      
+      
+      
     </>
   );
 };

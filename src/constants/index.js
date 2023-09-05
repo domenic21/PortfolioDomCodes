@@ -4,7 +4,7 @@ import {
     creator,
     web,
     javascript,
-  
+    domFaviCon,
     html,
     css,
     reactjs,
@@ -17,7 +17,8 @@ import {
     tripguide,
     threejs,
   } from "../assets";
-  
+ 
+
   export const navLinks = [
     {
       id: "about",
@@ -98,8 +99,8 @@ import {
     {
       title: "Operations Assisant logistics",
       company_name: "Daybreak Express",
-      icon: '',
-      iconBg: "#383E56",
+      icon: domFaviCon,
+      iconBg: "#FFFFFF",
       date: "December 2020 - Present",
       points: [
         'Successfully provide administrative assistance to the operations department including working with drivers to assign routes and process paperwork, answering telephones to ',
@@ -112,7 +113,7 @@ import {
     {
       title: "Personal Trainer",
       company_name: "Dom Fortan Trainin system",
-      icon: '',
+      icon: domFaviCon,
       iconBg: "#E6DEDD",
       date: "Jan 2017 - Feb 2021",
       points: [
@@ -125,8 +126,8 @@ import {
     {
       title: "Hvca Technician",
       company_name: "Hvac Tech Garfield Nj",
-      icon: '',
-      iconBg: "#383E56",
+      icon: domFaviCon,
+      iconBg: "#FFFFFF",
       date: "Oct 2018 - Jan 2020 ",
       points: [
       ],

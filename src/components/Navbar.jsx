@@ -42,7 +42,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={domlogo} alt='logo' className='w-50 h-20' />
+          <img src={domlogo} alt='logo' className={ `${styles.padding}` && 'w-50 h-20 ' }  />
       
           
         </Link>

@@ -5,12 +5,11 @@ import {styles} from '../styles'
 
 const Hero = () => {
   return (
-    <section className='relative w-full h-screen mx-auto'>
-      <div className={`${styles.paddingX} absolute inset-80 top-[120px]
-      `}>
-      <div ></div>
-      <h1 className={`${styles.heroHeadText}`}>Hi, I'm <span className='text-yellow-600'>Domenic</span></h1>
-      <p>Software Engineer</p>
+    <section className='relative w-full h-screen mx-auto lg:flex lg:h-screen lg:items-center py-40'>
+      <div className='mx-auto max-w-screen-xl px-4 py-40 text-center ' >
+      
+      <h1 className={`${styles.heroHeadText}`}>Domenic <span className='text-yellow-600'>Arias</span></h1>
+      <p><span className='text-yellow-600'>Software </span> Engineer | <span className='text-yellow-600'>Frontend </span> Developer</p>
       </div>
       {/*<ComputersCanvas className='hidden'/>*/}
 
