@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#000000",
-        secondary: "1B1B1B",
+        primary: "#050816",
+        secondary: "#aaa6c3",
         tertiary: "#151030",
         "black-100": "#100d25",
         "black-200": "#090325",
@@ -18,8 +18,11 @@ module.exports = {
       screens: {
         xs: "450px",
       },
+      backgroundImage: {
+        "about-pattern": "url('/src/assets/Gotham.jpeg')",
+      },
      
     },
-  },
+  }, 
   plugins: [],
 };

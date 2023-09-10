@@ -10,10 +10,12 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  color-scheme: dark;
+ color-scheme: dark;
   
 }
-
+.text {
+  -webkit-linear-gradient:(45deg,color(display-p3 1 0 .56),color(display-p3 1 .32 .23))
+}
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;

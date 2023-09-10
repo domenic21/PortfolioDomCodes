@@ -1,15 +1,16 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import {styles} from '../styles'
+
 //import {  ComputersCanvas} from './canvas'
 
-const Hero = () => {
+const Hero = () => { 
   return (
     <section className='relative w-full h-screen mx-auto lg:flex lg:h-screen lg:items-center py-40'>
       <div className='mx-auto max-w-screen-xl px-4 py-40 text-center ' >
       
-      <h1 className={`${styles.heroHeadText}`}>Domenic <span className='text-yellow-600'>Arias</span></h1>
-      <p><span className='text-yellow-600'>Software </span> Engineer | <span className='text-yellow-600'>Frontend </span> Developer</p>
+      <h1 className={`${styles.heroHeadText}`}>Domenic <span className="bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text" >Arias</span></h1>
+      <p><span className=" font-semibold bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text">Software </span> Engineer | <span className=" font-semibold bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text">Frontend </span> Developer</p>
       </div>
       {/*<ComputersCanvas className='hidden'/>*/}
 
