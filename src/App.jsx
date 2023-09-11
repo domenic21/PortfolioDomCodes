@@ -7,8 +7,9 @@ import {
   Feedbacks,
   Hero,
   Navbar,
-  Works,
+  Projects,
   StarsCanvas,
+  TabsSection
 } from "./components";
 
 const App = () => {
@@ -21,9 +22,10 @@ const App = () => {
           <Hero />
           <StarsCanvas />
         </div>
+        <TabsSection />
         <About />
         <Experience />
-        <Works />
+        <Projects />
         <Feedbacks />
         <div className="relative z-0">
           <Contact />

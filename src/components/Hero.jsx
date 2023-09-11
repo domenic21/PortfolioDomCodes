@@ -24,7 +24,6 @@ const Hero = () => {
       <div className='absolute xs:bottom-10 w-full  bottom-32 flex justify-center items-center'>
         <a href="#about">
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify items-start p-2'> 
-
           <motion.dev className="w-3 h-3 rounded-full bg-secondary mb-1 "
           animate={{
             y:[0 , 24,0 ]
