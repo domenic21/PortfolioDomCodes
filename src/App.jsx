@@ -14,18 +14,14 @@ import {
 const App = () => {
   return (
     <BrowserRouter>
-        <StarsCanvas />
       <div className="realtive z-0  ">
-      <StarsCanvas />
+        <StarsCanvas />
         <div className="bg-hero-pattern r bg-cover bg-no-repeat bg-center ">
           <Navbar />
           <Hero />
           <StarsCanvas />
-
         </div>
-        <StarsCanvas />
         <About />
-
         <Experience />
         <Works />
         <Feedbacks />
@@ -33,9 +29,7 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
-
       </div>
-
     </BrowserRouter>
   );
 };
