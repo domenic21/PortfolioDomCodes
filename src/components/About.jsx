@@ -34,7 +34,7 @@ const About = () => {
         
       </motion.p>
 
-      <Tech />
+      
       
       
       

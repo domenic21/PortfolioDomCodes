@@ -1,77 +1,76 @@
+/*import React from "react";
+import { Stepper, Step, Button, Typography } from "@material-tailwind/react";
 import {
-  Tabs,
-  TabsHeader,
-  TabsBody,
-  Tab,
-  TabPanel,
-} from "@material-tailwind/react";
-import React from 'react'
+  CogIcon,
+  UserIcon,
+  BuildingLibraryIcon,
+} from "@heroicons/react/24/outline";
+import About from './About'
+import {styles} from '../styles'
+import SectionWrap from '../hoc/SectionWrap'
+import Cards from './Cards'
 
+export function TabsSection() {
+  const [activeStep, setActiveStep] = React.useState(0);
+  const [isLastStep, setIsLastStep] = React.useState(false);
+  const [isFirstStep, setIsFirstStep] = React.useState(false);
 
+  const handleNext = () => !isLastStep && setActiveStep((cur) => cur + 1);
+  const handlePrev = () => !isFirstStep && setActiveStep((cur) => cur - 1);
 
-const TabsSection = () =>  {
-  const data = [
-    {
-      label: "HTML",
-      value: "html",
-      desc: `It really matters and then like it really doesn't matter.
-        What matters is the people who are sparked by it. And the people
-        who are like offended by it, it doesn't matter.`,
-    },
-    {
-      label: "React",
-      value: "react",
-      desc: `Because it's about motivating the doers. Because I'm here
-        to follow my dreams and inspire other people to follow their dreams, too.`,
-    },
-
-    {
-      label: "Vue",
-      value: "vue",
-      desc: `We're not always in the position that we want to be at.
-        We're constantly growing. We're constantly making mistakes. We're
-        constantly trying to express ourselves and actualize our dreams.`,
-    },
-
-    {
-      label: "Angular",
-      value: "angular",
-      desc: `Because it's about motivating the doers. Because I'm here
-        to follow my dreams and inspire other people to follow their dreams, too.`,
-    },
-
-    {
-      label: "Svelte",
-      value: "svelte",
-      desc: `We're not always in the position that we want to be at.
-        We're constantly growing. We're constantly making mistakes. We're
-        constantly trying to express ourselves and actualize our dreams.`,
-    },
-  ];
+  const getContent = (step) => {
+    switch (step) {
+      case 0:
+        return   <div className="justify-center flex"> </div>
+      case 1:
+        return <div className="justify-center flex">
+          
+        </div>;
+      case 2:
+        return <div className="justify-center flex">Content for step 2</div>;
+      default:
+        return null;
+    }
+  };
 
   return (
-    <Tabs id="custom-animation" value="html">
-      <TabsHeader>
-        {data.map(({ label, value }) => (
-          <Tab key={value} value={value}>
-            {label}
-          </Tab>
-        ))}
-      </TabsHeader>
-      <TabsBody
-        animate={{
-          initial: { y: 250 },
-          mount: { y: 0 },
-          unmount: { y: 250 },
-        }}
+    <div className='sm:px-16 px-6 sm:py-16' >
+      <Stepper
+        activeStep={activeStep}
+        isLastStep={(value) => setIsLastStep(value)}
+        isFirstStep={(value) => setIsFirstStep(value)}
+        
       >
-        {data.map(({ value, desc }) => (
-          <TabPanel key={value} value={value}>
-            {desc}
-          </TabPanel>
-        ))}
-      </TabsBody>
-    </Tabs>
+        <Step   onClick={() => setActiveStep(0)} >
+          <UserIcon className="h-9 w-9" />
+          <div className="absolute -top-[2.5rem] w-max text-center ">
+            <Typography variant="h6">Step 1</Typography>
+          </div>
+        </Step>
+        <Step onClick={() => setActiveStep(1)}>
+          <BuildingLibraryIcon className="h-9 w-9" />
+          <div className="absolute -top-[2.5rem] w-max text-center">
+            <Typography variant="h6">Step 2</Typography>
+          </div>
+        </Step>
+        <Step onClick={() => setActiveStep(2)}>
+          <CogIcon className="h-9 w-9" />
+          <div className="absolute -top-[2.5rem] w-max text-center">
+            <Typography variant="h6">Step 3</Typography>
+          </div>
+        </Step>
+      </Stepper>
+      
+      {getContent(activeStep)}
+      <div className="flex justify-between mt-10 ">
+        <Button color="gray"  className='bg-secondary' onClick={handlePrev}>
+          Back
+        </Button>
+        <Button className='bg-secondary' onClick={handleNext}>
+          {isLastStep ? "Next" : "Next"}
+        </Button>
+      </div>
+    </div>
   );
 }
-export default TabsSection
+export default SectionWrap (TabsSection, "");*/

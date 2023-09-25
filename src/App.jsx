@@ -4,12 +4,11 @@ import {
   About,
   Contact,
   Experience,
-  Feedbacks,
   Hero,
   Navbar,
   Projects,
   StarsCanvas,
-  TabsSection
+  
 } from "./components";
 
 const App = () => {
@@ -22,11 +21,11 @@ const App = () => {
           <Hero />
           <StarsCanvas />
         </div>
-        <TabsSection />
+        
         <About />
         <Experience />
         <Projects />
-        <Feedbacks />
+       
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
