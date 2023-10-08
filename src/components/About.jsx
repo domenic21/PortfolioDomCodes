@@ -2,11 +2,10 @@ import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { services } from "../constants";
+
 import { fadeIn, textVariant } from "../utils/motion";
 import SectionWrap from "../hoc/SectionWrap";
-import Tech from "./Tech";  
-
+import Cards from "./Cards";
 const About = () => {
   return (
     <>
@@ -34,7 +33,7 @@ const About = () => {
         
       </motion.p>
 
-      
+      <Cards />
       
       
       

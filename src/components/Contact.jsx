@@ -14,7 +14,7 @@ const contact = () => {
     email: "",
     message: "",
   });
-
+  
   const [loading, setLoading] = useState(false);
 
   const handleChanges = (e) => {};
@@ -22,26 +22,28 @@ const contact = () => {
   const handleSubmit = (e) => {};
 
   return (
-    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden ">
+    <div className="mx-auto max-w-screen-xl  px-4 py-16 sm:px-6 lg:px-8 gap-10">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+        className="mx-auto max-w-lg text-center bg-[#1d1836] rounded-2xl"
       >
+        <div className="pt-12">
         <p className={styles.sectionSubText}>Get in touch!</p>
         <h3 className={styles.sectionHeadText}>Contact</h3>
+        </div>
         <form
           ref={FormRef}
           onSubmit={handleSubmit}
-          className="flex flex-col gap-8 mt-12"
+          className="mx-auto mb-0 mt-8 max-w-md space-y-4"
         >
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Name </span>
+            <span className="text-white font-medium mb-2 ">Your Name </span>
             <input
               type="text"
               name="name"
               value={form.name}
               onChange={handleChanges}
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary 
+              className=" bg-gray-200 py-4 px-6 placeholder:text-gray-500
             text-white
             rounded-lg outline-none border-none font-medium"
               placeholder="What's your name?"
@@ -55,7 +57,7 @@ const contact = () => {
               name="email"
               value={form.email}
               onChange={handleChanges}
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary 
+              className="bg-gray-200  py-4 px-6 placeholder:text-secondary 
             text-white
             rounded-lg outline-none border-none font-medium"
               placeholder="What's your email?"
@@ -69,7 +71,7 @@ const contact = () => {
               name="message"
               value={form.message}
               onChange={handleChanges}
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary 
+              className="bg-gray-200  py-4 px-6 placeholder:text-secondary 
             text-white
             rounded-lg outline-none border-none font-medium"
               placeholder="Leave me message.Will get back to you soon!"
@@ -78,7 +80,7 @@ const contact = () => {
           <button 
           type="submit" 
           className="bg-tertinary py-3 px-8 rounded-xl w-fit 
-           text-white font-bold outline-none shadow-md shadow-primary"
+            text-white font-bold outline-none shadow-md bg-blue-700 "
           >
             {loading ? "Sending..." : "Send"}
 
