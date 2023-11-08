@@ -13,7 +13,6 @@ const Cards = () => {
     <div className="lg:grid lg:grid-cols-3 lg:gap-8 grid sm:grid-cols-1 max:grid-cols-3">
       <div>
         <h2 className="text-3xl font-extrabold text-gray-200">Education</h2>
-       
       </div>
       <div className="mt-8 lg:mt-0 lg:col-span-2">
         <dl className="">
@@ -22,8 +21,8 @@ const Cards = () => {
             Bachelor of Science in Software Engineering ~ C# Track
             </dt>
             <dd className="mt-2 text-base text-red-400 grid grid-cols-2">
-              <p >western Governors University</p>
-              <p className='grid justify-end'> (June 2024) </p> 
+              <p > <em>Western Governors University </em></p>
+              <p className='grid justify-end'> <em>(June 2024) </em> </p> 
               
             </dd>
           </div>
@@ -45,11 +44,11 @@ const Cards = () => {
         <dl className="">
           <div>
             <dt className="text-lg leading-6  font-semibold text-gray-300">
-              Front-End Development with React
+              Front-End Development-React JS
             </dt>
             <dd className="mt-3 text-base text-red-400 grid grid-cols-2">
-              <p >CoderHouse</p>
-              <p className='grid justify-end'> (Feb-2023) </p> 
+              <p > <em>CoderHouse </em></p>
+              <p className='grid justify-end'> <em>(Feb-2023)</em> </p> 
               
             </dd>
           </div>

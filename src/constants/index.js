@@ -28,6 +28,10 @@ import {
       id: "contact",
       title: "Contact",
     },
+    {
+      id: "projects",
+      title: "Projects",
+    },
   ];
   
 
